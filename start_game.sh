@@ -15,4 +15,10 @@ then
 	read # wait for the user to press a key
 	
 	./$EXECUTABLE
+	
+	# --3. Clean up the executable 
+	rm -f $EXECUTABLE
+else
+	echo "Compilation failed! Check your code"
+fi
 
