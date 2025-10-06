@@ -1,8 +1,18 @@
 In start_game.sh --
 
 # 1. -- Compilation --
-# -Wall flag - Stands for "Warn All." It enables most useful compiler warnings, which is good practice for catching potential bugs.
-# -o -- names the output file
+# -Wall flag --> Stands for "Warn All." It enables most useful compiler warnings, which is good practice for catching potential bugs.
+# -o --> names the output file
 # after name in mine case $EXECUTABLE is file to comile which is CSOURCES AND by -l ncurses libra
 ry will be linked
 
+
+In flappybird.c --
+
+#define JUMP_VELOCITY -2.5f	--> Preprocessor directive that sets a constant for the upward speed when the bird jumps. We use a negative number because in terminal coordinates, Y increases as you go down.
+
+#define GRAVITY 0.2f  -->   Defines the constant acceleration pulling the bird down each frame.
+
+#define PIPE_GAP_HEIGHT 8	-->     Defines the vertical size (in characters/rows) of the opening the bird must fly through.
+
+#define FRAME_DELAY_US 50000	-->     Defines the pause duration for each frame in microseconds (50,000 μs=50ms). This determines the game's speed (20 frames per second).
