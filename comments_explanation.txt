@@ -1,0 +1,8 @@
+In start_game.sh --
+
+# 1. -- Compilation --
+# -Wall flag - Stands for "Warn All." It enables most useful compiler warnings, which is good practice for catching potential bugs.
+# -o -- names the output file
+# after name in mine case $EXECUTABLE is file to comile which is CSOURCES AND by -l ncurses libra
+ry will be linked
+
